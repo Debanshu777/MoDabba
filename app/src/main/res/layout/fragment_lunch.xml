@@ -87,7 +87,7 @@
                     android:layout_gravity="bottom"
                     android:padding="5dp"
                     android:textSize="10dp"
-                    android:text="—  Moong Dal  —\n—  Harada Dal  —\n—  Masur Dal  —\n—  Dal Fry  —\n—  Punjabi Dal  —\n—  Dalma  —"/>
+                    android:text="— Moong Dal —\n— Harada Dal —\n— Masur Dal —\n— Dal Fry —\n— Punjabi Dal —\n— Dalma —"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -125,7 +125,7 @@
                     android:layout_gravity="bottom"
                     android:padding="5dp"
                     android:textSize="10dp"
-                    android:text="—  Mix Veg  —\n—  Santula Masala  —\n—  Gobi Masala  —\n—  Gobi Fry  —\n—  Rasa Items —\n— Baigana Masala  —"/>
+                    android:text="— Mix Veg —\n— Santula Masala —\n— Gobi Masala —\n— Gobi Fry —\n— Rasa Items —\n— Baigana Masala —"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -172,7 +172,7 @@
                     android:padding="5dp"
                     android:layout_marginBottom="10dp"
                     android:textSize="10dp"
-                    android:text="—  Plain Panner  —\n—  Paneer Butter  —\n—  Soya Curry  —\n—  Dhoka Curry  —\n—  Palang Paneer  —"/>
+                    android:text="— Plain Panner —\n— Paneer Butter —\n— Soya Curry —\n— Dhoka Curry —\n— Palang Paneer —"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -209,7 +209,7 @@
                     android:paddingTop="3dp"
                     android:layout_marginBottom="3dp"
                     android:textSize="10dp"
-                    android:text="—  Fish Fry/Kalia  —\n—  Fish Curry  —\n—  Fish Besara Masala  —\n—  Chicken Masala /Curry  —\n—  Chicken Butter Masala  —\n—  Egg Fry/Egg Curry  —\n—  Egg Omlet Curry  —"/>
+                    android:text="— Fish Fry/Kalia —\n— Fish Curry —\n— Fish Besara Masala —\n— Chicken Masala /Curry —\n— Chicken Butter Masala —\n— Egg Fry/Egg Curry —\n— Egg Omlet Curry —"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -255,7 +255,7 @@
                     android:padding="5dp"
                     android:textSize="10dp"
                     android:layout_marginBottom="20dp"
-                    android:text="—  Mix Bhaji  —\n—  Saga Bhaji  —\n—  Alu Bhaji Chatni  —\n—  Chips  —"/>
+                    android:text="— Mix Bhaji —\n— Saga Bhaji —\n— Alu Bhaji Chatni —\n— Chips —"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -292,7 +292,7 @@
                     android:layout_gravity="bottom"
                     android:padding="5dp"
                     android:textSize="10dp"
-                    android:text="—  Mango Khata  —\n—  Plastic Chatni  —\n—  Tomato Chatni  —\n—  Veg Salad  —\n—  Fruit Salad  —\n—  Raita  —"/>
+                    android:text="— Mango Khata —\n— Plastic Chatni —\n— Tomato Chatni —\n— Veg Salad —\n— Fruit Salad —\n— Raita —"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
