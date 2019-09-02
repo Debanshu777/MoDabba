@@ -1,27 +1,16 @@
 package com.example.modabba;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-import com.example.modabba.fragments.HomeFragment;
-import com.example.modabba.fragments.ProfileFragment;
-import com.example.modabba.fragments.SubscriptionFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
