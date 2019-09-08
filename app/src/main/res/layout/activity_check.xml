@@ -254,6 +254,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10sp"
                 android:text="Veg/Non-Veg"
+                android:textColor="@color/white"
                 android:fontFamily="@font/Product Sans Regular"
                 android:textAlignment="viewStart"
                 android:textSize="17dp" />
@@ -278,6 +279,7 @@
                     android:layout_height="match_parent"
                     android:textSize="17dp"
                     android:text="Total"
+                    android:textColor="@color/white"
                     />
                 <TextView
                     android:paddingRight="10dp"
@@ -285,6 +287,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15dp"
+                    android:textColor="@color/white"
                     android:textAlignment="viewEnd"
                     android:text="$1400"
                     />
@@ -316,18 +319,5 @@
 
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/Product Sans Regular"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:text="MoDabba \n Bhubaneshwar,India"/>
     </LinearLayout>
 </LinearLayout>
