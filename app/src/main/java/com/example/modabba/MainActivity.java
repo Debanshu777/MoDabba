@@ -11,6 +11,7 @@ import android.widget.ViewFlipper;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.kofigyan.stateprogressbar.StateProgressBar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,45 +22,23 @@ public class MainActivity extends AppCompatActivity {
     MyAdapter adapter;
     ViewPager viewPager;
     BottomNavigationView bottom_nav;
+    String[] descriptionData = {"Preparing", "On Way", "Delivered"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int images[]={R.drawable.food1,R.drawable.food2,R.drawable.food3};
-        flipper=findViewById(R.id.flipper);
-        back=findViewById(R.id.back);
-        for (int image:images)
-        {
-            flipperImage(image);
-        }
-        tabLayout=findViewById(R.id.tablayout);
-        viewPager=findViewById(R.id.viewpager);
-        tabLayout.addTab(tabLayout.newTab().setText("Lunch"));
-        tabLayout.addTab(tabLayout.newTab().setText("Dinner"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        int images[] = {R.drawable.food1, R.drawable.food2, R.drawable.food3};
+        StateProgressBar stateProgressBar = (StateProgressBar) findViewById(R.id.your_state_progress_bar_id);
+        stateProgressBar.setStateDescriptionData(descriptionData);
+        //flipper = findViewById(R.id.flipper);
+        //back = findViewById(R.id.back);
+       // for (int image : images) {
+            //flipperImage(image);
+        //}
 
-        adapter= new MyAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
     }
 
-    public void flipperImage(int image)
+   /* public void flipperImage(int image)
     {
         ImageView imageView=new ImageView(this);
         imageView.setBackgroundResource(image);
@@ -68,5 +47,5 @@ public class MainActivity extends AppCompatActivity {
         flipper.setAutoStart(true);
         flipper.setInAnimation(this,android.R.anim.slide_in_left);
         flipper.setOutAnimation(this,android.R.anim.slide_out_right);
-    }
+    }*/
 }

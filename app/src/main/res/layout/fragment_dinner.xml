@@ -21,7 +21,7 @@
             android:layout_weight="1">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="140dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -32,24 +32,15 @@
                     android:layout_height="100dp"
                     android:layout_gravity="top|center"
                     android:src="@drawable/roti"/>
-                <TextView
+
+                <com.alespero.expandablecardview.ExpandableCardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary"
-                    android:text="ROTI ITEMS"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:paddingTop="5dp"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="10dp"
-                    android:text="— Puri —\n— Paratha —\n— Fried Nan —\n— Thunka Puri —"/>
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/roti"
+                    app:title="Roti" />
+
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -60,7 +51,7 @@
             android:padding="5dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="140dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -71,23 +62,14 @@
                     android:scaleType="fitCenter"
                     android:layout_gravity="top|center"
                     android:src="@drawable/coconut_paneer_curry"/>
-                <TextView
+                <com.alespero.expandablecardview.ExpandableCardView
+
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary"
-                    android:text="VEG CURRY"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:paddingTop="5dp"
-                    android:textSize="10dp"
-                    android:text="— Dal Fry —\n— Dal Tadaka —\n— Matar Paneer —\n— Chana Masala —\n— Palang Paneer —\n— Mix Veg —\n— Soya Chilli —"/>
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/veg_curryd"
+                    app:title="Veg " />
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -98,7 +80,7 @@
             android:padding="5dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="140dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -108,25 +90,16 @@
                     android:layout_marginTop="4dp"
                     android:layout_height="100dp"
                     android:layout_gravity="top|center"
-                    android:src="@drawable/chicken_tikka_masala"/>
-                <TextView
+                    android:src="@drawable/bhajja_aloo"/>
+                <com.alespero.expandablecardview.ExpandableCardView
+
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary"
-                    android:text="NON VEG CURRY"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10dp"
-                    android:text="— Egg Bhujia —\n— Chicken Masala —\n— Chicken Kasa —\n— Chili Chicken —\n— Chicken Moglai —\n— Egg Tadaka —"/>
-
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/bhaaji"
+                    app:title="Bhaaji"
+                    />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
@@ -144,7 +117,7 @@
             android:layout_weight="1">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="140dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -152,25 +125,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_gravity="top|center"
-                    android:src="@drawable/bhajja_aloo"/>
-                <TextView
+                    android:src="@drawable/chicken_tikka_masala"/>
+                <com.alespero.expandablecardview.ExpandableCardView
+
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary"
-                    android:text="BHAJI"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:padding="5dp"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="10dp"
-                    android:text="— Plain Bhaji —\n— Alu Bhaji —\n— Vendi Bhaji —"/>
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/add_on"
+                    app:title="Non Veg "
+                    />
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -181,7 +145,7 @@
             android:padding="5dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="140dp"
                 app:cardBackgroundColor="@color/colorPrimary"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -191,24 +155,14 @@
                     android:layout_gravity="top|center"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sweet"/>
-                <TextView
+                <com.alespero.expandablecardview.ExpandableCardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary"
-                    android:text="SWEETS"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:paddingTop="5dp"
-                    android:layout_marginBottom="30dp"
-                    android:textSize="10dp"
-                    android:text="— Rice Khir —\n— Semayee —\n— CustardSweets —"/>
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/sweets"
+                    app:title="Sweets" />
+
 
             </androidx.cardview.widget.CardView>
 
