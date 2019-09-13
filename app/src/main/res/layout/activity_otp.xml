@@ -1,54 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:padding="10dp"
+    android:padding="30dp"
     android:gravity="center">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginTop="50dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
         android:src="@drawable/otpimg" />
 
     <TextView
         android:paddingTop="10dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30dp"
+        android:textAlignment="center"
         android:layout_gravity="left"
         android:textStyle="bold"
-        android:fontFamily="@font/open_sans"
         android:text="Enter OTP"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
         android:layout_gravity="left"
-        android:fontFamily="@font/open_sans"
+        android:textAlignment="center"
         android:text="We have sent you an OTP for mobile verification"/>
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:paddingTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_gravity="left"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/opensans_regular"
         android:hint="Enter OTP here"/>
     <Button
         android:paddingTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:id="@+id/submit"
         android:text="SUBMIT"
-        android:backgroundTint="@color/colorPrimary"
         android:background="@drawable/button_background"
+
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resend OTP?"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:textColor="#1E88E5"/>
 
 </LinearLayout>
