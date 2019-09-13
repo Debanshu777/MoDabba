@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ViewFlipper flipper;
     ImageButton back;
     TabLayout tabLayout;
+    Button sub;
     MyAdapter adapter;
     ViewPager viewPager;
     BottomNavigationView bottom_nav;
@@ -30,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
         int images[] = {R.drawable.food1, R.drawable.food2, R.drawable.food3};
         StateProgressBar stateProgressBar = (StateProgressBar) findViewById(R.id.your_state_progress_bar_id);
         stateProgressBar.setStateDescriptionData(descriptionData);
+        sub=findViewById(R.id.sub);
+        sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AddressActivity.class));
+            }
+        });
         //flipper = findViewById(R.id.flipper);
         //back = findViewById(R.id.back);
        // for (int image : images) {
