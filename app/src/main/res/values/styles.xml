@@ -12,4 +12,7 @@
         <item name="colorSwitchThumbNormal">#38EE3F</item>
         <item name="android:colorForeground">#42221f1f</item>
     </style>
+    <style name="customfontstyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/</item>
+    </style>
 </resources>
