@@ -1,52 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
-    android:padding="10dp"
-    android:gravity="center"
-    tools:context=".LoginActivity">
+    android:weightSum="2"
+    android:layout_width="match_parent"
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
-        android:padding="10dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Mobile Number"
-        android:inputType="textPassword"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@android:color/white"
-        android:fontFamily="@font/opensans_regular"
-        android:textColorHint="@android:color/white"
-        android:id="@+id/password"
-        android:layout_marginTop="15dp"
-        android:padding="10dp" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:fontFamily="@font/opensans_regular"
-        android:text="Submit"
-        android:textAllCaps="false"
-        android:textColor="#ffffff"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/button_background"/>
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:fontFamily="@font/opensans_regular"
-        android:text="Don't have a account? Sign up"
-        android:id="@+id/txt_signup"
-        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@drawable/logo"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Account"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="17dp"
+            android:letterSpacing="0.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#666262"
+            android:text="Login to your account using phone number"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight=".45"
+                android:id="@+id/number"
+                app:boxBackgroundMode="none"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLength="10"
+                    android:hint="10 digit mobile number"
+                    android:inputType="number"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textColorHint="#ffffff"
+                    android:drawableStart="@drawable/phone"
+                    android:drawableTint="#fff"
+                    android:drawablePadding="16dp"
+                    android:background="#FF5722"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton
+                android:id="@+id/login"
+                android:layout_width="32dp"
+                android:tint="#fff"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/forword_arrow"
+                android:layout_height="32dp" />
+        </RelativeLayout>
+        <View
+            android:background="#000000"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:src="@drawable/share"
+                    android:tint="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:text="Share"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@id/i1"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:id="@+id/t1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#666262"
+                    android:textSize="16dp"
+                    android:text="Share the app across your friends"
+                    android:layout_below="@id/t1"
+                    android:layout_toRightOf="@id/i1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:tint="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/forword_arrow"
+                    android:layout_height="24dp" />
+            </RelativeLayout>
+            <View
+                android:background="#666262"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/i2"
+                    android:src="@drawable/rate"
+                    android:tint="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:id="@+id/t2"
+                    android:text="Rate in Play Store"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@id/i2"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#666262"
+                    android:textSize="16dp"
+                    android:text="Rate and Review our app in play store"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/t2"
+                    android:layout_toRightOf="@id/i2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:tint="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/forword_arrow"
+                    android:layout_height="24dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

@@ -13,6 +13,7 @@
         <activity android:name=".CheckActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".OtpActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
