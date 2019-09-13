@@ -21,15 +21,16 @@ public class Dashboard extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        /*StateProgressBar stateProgressBar = container.findViewById(R.id.your_state_progress_bar_id);
+        View v= inflater.inflate(R.layout.fragment_dashboard, container, false);
+        StateProgressBar stateProgressBar = v.findViewById(R.id.your_state_progress_bar_id);
         stateProgressBar.setStateDescriptionData(descriptionData);
-        sub=container.findViewById(R.id.sub);
+        sub=v.findViewById(R.id.sub);
         sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 updateDetail();
             }
-        });*/
+        });
         return inflater.inflate(R.layout.fragment_dashboard, container, false);
     }
     public void updateDetail() {
