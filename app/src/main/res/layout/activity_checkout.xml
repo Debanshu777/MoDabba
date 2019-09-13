@@ -266,7 +266,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:padding="5dp"
             android:background="@drawable/color_button"
-            android:text="Proceed   √"
+            android:text=" Proceed   √  "
             />
     </RelativeLayout>
 
