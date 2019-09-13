@@ -52,27 +52,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/Product Sans Bold"
+                        android:textStyle="bold|italic"
                         android:textSize="35dp"
                         android:text="Hi! Debanshu"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Today's Menu"
-                        android:fontFamily="@font/Product Sans Regular"
                         android:textAlignment="center"
                         android:textSize="17.5dp"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:fontFamily="@font/Product Sans Regular"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:text="Lunch:"/>
                     <TextView
                         android:paddingLeft="10dp"
-                        android:fontFamily="@font/Product Sans Regular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -81,14 +78,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/Product Sans Regular"
                         android:textAlignment="center"
                         android:text="Dinner:"/>
                     <TextView
                         android:paddingLeft="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/Product Sans Regular"
                         android:textAlignment="center"
                         android:text="Roti/Dal/Veg Curry(Dynamic menu)"/>
                 </LinearLayout>
