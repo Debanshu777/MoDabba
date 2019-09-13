@@ -18,47 +18,22 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:id="@+id/username"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:id="@+id/email"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="Enter Mobile Number"
         android:inputType="textPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/opensans_regular"
         android:textColorHint="@android:color/white"
         android:id="@+id/password"
         android:layout_marginTop="15dp"
-        android:padding="10dp"
-        />
+        android:padding="10dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/login"
-        android:text="Login"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Submit"
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:layout_marginLeft="20dp"
@@ -70,15 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
+        android:fontFamily="@font/opensans_regular"
         android:text="Don't have a account? Sign up"
         android:id="@+id/txt_signup"
         android:layout_marginTop="15dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:text="Fogot Password?"
-        android:id="@+id/fog_password"
-        android:layout_marginTop="15dp"/>
-
 </LinearLayout>
