@@ -61,7 +61,7 @@
                     android:textColor="#ffffff"
                     android:textSize="16dp"
                     android:textColorHint="#ffffff"
-                    android:drawableStart="@drawable/ic_phone_black_24dp"
+                    android:drawableStart="@drawable/phone"
 
                     android:drawableTint="#fff"
                     android:drawablePadding="16dp"
@@ -69,10 +69,11 @@
                     android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
-            <ImageView
+            <ImageButton
                 android:id="@+id/login"
                 android:layout_width="32dp"
                 android:tint="#fff"
+                android:background="@color/colorPrimary"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="15dp"
