@@ -7,12 +7,20 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:background="#dfdfef"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            />
 
     </LinearLayout>
+
     <LinearLayout
         android:background="#fff"
         android:layout_weight="1"
