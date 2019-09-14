@@ -28,8 +28,8 @@ public class Dashboard extends Fragment {
         StateProgressBar stateProgressBar = v.findViewById(R.id.progress_bar);
         stateProgressBar.setStateDescriptionData(descriptionData);
         sub=v.findViewById(R.id.sub);
-        non_veg=v.findViewById(R.id.Non_veg);
-        extra=v.findViewById(R.id.extra);
+        //non_veg=v.findViewById(R.id.Non_veg);
+        //extra=v.findViewById(R.id.extra);
         sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

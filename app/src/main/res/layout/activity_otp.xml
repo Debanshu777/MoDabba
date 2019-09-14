@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:padding="30dp"
-    android:gravity="center">
+    android:gravity="center|top">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -32,25 +32,29 @@
         android:layout_gravity="left"
         android:textAlignment="center"
         android:text="We have sent you an OTP for mobile verification"/>
-    <EditText
+    <com.example.modabba.OtpEditText
+        android:id="@+id/et_otp"
         android:layout_width="match_parent"
-        android:paddingTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_gravity="left"
         android:layout_height="wrap_content"
-        android:hint="Enter OTP here"/>
+        android:cursorVisible="false"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="20sp"/>
     <Button
         android:paddingTop="5dp"
         android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="7dp"
         android:id="@+id/submit"
         android:text="SUBMIT"
+        android:backgroundTint="@color/white"
         android:background="@drawable/color_button"
 
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
