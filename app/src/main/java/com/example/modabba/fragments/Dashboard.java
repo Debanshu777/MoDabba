@@ -20,11 +20,11 @@ import com.kofigyan.stateprogressbar.StateProgressBar;
 public class Dashboard extends Fragment {
     String[] descriptionData = {"Preparing", "On Way", "Delivered"};
     Button sub;
-    Chip non_veg,extra;
+    //Chip non_veg,extra;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.fragment_dashboard, container, false);
+        View v = inflater.inflate(R.layout.fragment_dashboard, container, false);
         StateProgressBar stateProgressBar = v.findViewById(R.id.progress_bar);
         stateProgressBar.setStateDescriptionData(descriptionData);
         sub=v.findViewById(R.id.sub);
@@ -36,12 +36,12 @@ public class Dashboard extends Fragment {
                 updateDetail();
             }
         });
-        non_veg.setOnClickListener(new View.OnClickListener() {
+       /* non_veg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
-        });
+        });*/
         return v;
     }
     public void updateDetail() {
